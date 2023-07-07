@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>열 그룹</title>
+
+  <style>
+
+  table,th,td{
+    border:1px solid black;
+    border-collapse:collapse;
+  }
+
+  </style>
+  </head>
+  <body>
+
+  <table>
+  <caption> 모둠원 주소록</caption>
+
+  <colgroup>
+
+    <col>
+    <col>
+    <col style="background-color:yellow">
+
+  </colgroup>
+
+  <tr>
+    <th>이름</th>
+    <th>주소</th>
+    <th>전화번호</th>
+  </tr>
+
+  <tr>
+    <td>정연숙</td>
+    <td>인천 중구 미추홀구</td>
+    <td>010-1111-2222</td>
+  </tr>
+
+  <tr>
+    <td>김형국</td>
+    <td>인천 중구 답동</td>
+    <td>010-2222-3333</td>
+  </tr>
+
+  <tr>
+    <td>향왕</td>
+    <td>인천 서구</td>
+    <td>010-3333-4444</td>
+  </tr>
+
+  </table>
+
+  </body>
+
+<!--
+열그룹은 <col>태그로 지정합니다.
+<col>태그는 <colgroup> ~ <colgroup> 태그 사이에 기술합니다.
+<colgroup> ~ <colgroup> 태그사이에 기술된 열의 개수는 테이블 전체의 열의 개수와 같아야 합니다.
+<colgroup>태그는 <table>, <caption>태그보다는 뒤에 기술되어야 하며 <thead>, <tbody>등의 태그보다는 앞서 기술되어야 한다
+-->
+
+
+</html>

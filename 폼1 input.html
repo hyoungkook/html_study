@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>input에 대해</title>
+</head>
+<body>
+
+<form>
+    아이디 : <br>
+    <input type="text" name="id">
+    <br><br>
+
+    암  호 : <br>
+    <input type="password" name="security">
+    <br><br><br><br>
+
+    <!-- name 속성을 사용하여 폼 요소에 이름을 부여하므로 항상 기술하는 것이 좋다.-->
+    <!-- 폼 입력내용은 '이름=값'의 형식으로 전송되므로, name속성으로 이름을 지정해야 서버에서 값을 구분할 수 있다.-->
+
+
+
+
+    회원번호: <br>
+    <input type="text" name="number" size="8">
+    <br><br>
+    <!-- size 속성으로 필드 크기를 8자로 제한-->
+
+    주  소 : <br>
+    <input type="text" name="address" value="한국" maxlength="20">
+    <br><br><br><br>
+    <!-- value속성으로 기본적으로 한국이라는 글자가 뜨게 했고, maxlength속성으로 최대 입력은 영문20글자 -->
+
+
+
+    <p>웹페이지 표시 버튼에는 우편번호 검색처럼 특정한 작업을 수행하는 명령버튼이 있고, 
+        사용자가 입력한 내용을 서버에 전송하는 submit버튼이 있다.</p>
+    <p>명령버튼은 "input type="button"으로 지정</p>
+    
+    회원번호 : <input type="text" name="number">
+    <br><br>
+    우편번호 : <input type="text" name="zipcode">
+    <input type="button" value="검색" onclick="zipcode_search()">
+    <br><br><br><br>
+
+    <!-- onclick속성은 이 버튼이 클릭되었을때 실행될 프로그램 코드를 지정 -->
+
+
+</form>
+
+<form action="member.php" method="post">
+
+    <p>submit버튼은 "input type="submit"으로 지정.</p>
+    <p>submit버튼을 사용할때는 form태그에 action과 method속성을 추가해야 함</p>
+
+    회원번호 : <input type="text" name="number">
+    <br><br>
+    우편번호 : <input type="text" name="zipcode">
+    <input type="button" value="검색" onclick="zipcode_search()">
+    <br>
+    회원주소 : <input type="text" name="address">
+    <br><br>
+    <input type="submit" value="전송하려면 클릭하세요!">
+</form>
+
+</body>
+<script>
+function zipcode_search(){
+    alert("일단 ok")
+};
+
+</script>
+
+
+</html>
